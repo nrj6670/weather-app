@@ -1,5 +1,3 @@
-console.log("client side javascript is running");
-
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 const p1 = document.querySelector("#message1");
