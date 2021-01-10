@@ -2,6 +2,9 @@ const path = require("path");
 const hbs = require("hbs");
 const express = require("express");
 
+//setting up port
+const port = process.env.PORT || 3000;
+
 //importing geocode and forecast files
 const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
@@ -80,6 +83,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("The server is up and running");
+app.listen(port, () => {
+  console.log("The server is up and running in port " + port);
 });
